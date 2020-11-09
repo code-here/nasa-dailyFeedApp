@@ -1,6 +1,3 @@
-console.log(`client side js file is loded`);
-
-
 //renders content to html page here input argument is the data from api
 function renderContent(data) {
     let renderHTML = '<div class="dailyFeed">';
