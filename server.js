@@ -5,6 +5,7 @@ const dailyData = require('./getDaily');
 
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //define config paths for express
 const staticFolder = path.join( __dirname, '\\public');
@@ -72,6 +73,6 @@ app.get('*', (req, res) => {
 })
 
 //start up the server on port 3000
-app.listen(3000, () => {
-    console.log('express server has started on port 3000 correctly');
+app.listen(port, () => {
+    console.log(`express server has started on port ${port} correctly`);
 })
