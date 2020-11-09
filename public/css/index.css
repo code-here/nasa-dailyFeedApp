@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+
+body {
+    max-width: 650px;
+    color: #333333;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #eeeeee;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+    margin: 1rem 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #888888;
+    margin-right: 0.6rem;
+}
+
+header h1 {
+    font-size: 64px;
+    margin: 0.7rem auto;
+}
+
+.about {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    margin-left: 1.5rem;
+    margin-top: 2.6rem;
+    text-align: center;
+}
+
+.about img {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+footer {
+    color: #999999;
+    margin-top: 1rem;
+    border-top: 1px solid #eeeeee;
+    padding: 1rem 0;
+}
+
+.dailyFeed img {
+    width: 100%;
+}
+
+.dailyFeed h1 {
+    margin-bottom: 0.5rem;
+}
+
+.dailyFeed #date {
+    margin: 0.7rem 0;
+}
+
+.dailyFeed #copyright {
+    text-align: right;
+    font-weight: bold;
+}
+
+.typeSelector {
+    display: flex;
+    justify-content: space-around;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.typeSelector > div {
+    padding: 1rem;
+    transition-duration: 1s;
+}
+
+#sdate:hover,#rdate:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+.sdatepanel {
+    display: none;
+}
+
+.rdatepanel {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    height: 1rem;
+    width: 1.2rem;
+}

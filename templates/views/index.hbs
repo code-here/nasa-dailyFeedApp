@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Nasa-Daily
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <div class="typeSelector">
+                <div id="sdate">enter a specific date</div>
+                <div id="rdate">enter a range of date</div>
+                <div class="sdatepanel">
+                    <form id='ssubmitForm'>
+                        <input type='date' id='getSpecificDate' min='1995-06-16'>
+                        <button type="submit" value="GO"></button>
+                    </form>
+                </div>
+                <div class="rdatepanel">
+                    <form id='rsubmitForm'>
+                        <input type='date' id='getStartDate' min='1995-06-16'>
+                        <input type='date' id='getEndDate' min='1995-06-16'>
+                        <button type="submit" value="GO"></button>
+                    </form>
+                </div>
+            </div>
+            <div id="errorMSG" style="color: #ff0000; font-weight:bold"></div>
+            <div id="processBar" style="font-weight: bold;"></div>
+        </div>
+        
+        {{>footer}}
+
+        <script src="/js/app.js"></script>
+    </body>
+</html>

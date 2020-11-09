@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            about page
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <div class="about">
+                <img src="/img/goh.jpg">
+                <div>
+                    <h1>{{work}}</h1>
+                    <br>
+                    <p style="text-align: right;">author:     {{author}}</p>
+                </div>
+            </div>
+        </div>
+        
+        {{>footer}}
+    </body>
+</html>
