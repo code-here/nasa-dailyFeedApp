@@ -8,9 +8,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //define config paths for express
-const staticFolder = path.join( __dirname, '\\public');
-const viewsPath = path.join(__dirname, '\\templates\\views');
-const partialsPath = path.join(__dirname, '\\templates\\partials')
+const staticFolder = path.join( __dirname, '/public');
+const viewsPath = path.join(__dirname, '/templates/views');
+const partialsPath = path.join(__dirname, '/templates/partials')
 
 //setting up static directory to serve for express
 app.use(express.static(staticFolder));
