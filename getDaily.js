@@ -13,7 +13,6 @@ const dailyData = (callback,date = false, start_date = false, end_date = false) 
     if(start_date && end_date) {
         url = `${baseurl}&start_date=${start_date}&end_date=${end_date}`;
     }
-    console.log(`dailydata ${url}`)
     axios({
         url: url,
         method: 'GET'

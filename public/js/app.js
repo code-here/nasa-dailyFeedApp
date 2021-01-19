@@ -103,5 +103,4 @@ rsubmitForm.addEventListener('submit', (e) => {
         }
     })
     .catch(err => err);
-    console.log(`${getStartDate.value}  ${getEndDate.value}`);
 })

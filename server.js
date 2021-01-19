@@ -5,7 +5,7 @@ const dailyData = require('./getDaily');
 
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 //define config paths for express
 const staticFolder = path.join( __dirname, '/public');
@@ -48,11 +48,10 @@ app.get('/about', (req, res) => {
 
 //app API endpoint
 app.get('/nasa-daily',(req, res) => {
-    console.log(req.query);
     if(req.query.date) {  //url&date=2020-11-4
-        dailyData(data => res.send(data),date = req.query.date);  //dailyData is a function in dailyData.js to get data using nasa apod api
+        dailyData(data => res.send(data), date = req.query.date);  //dailyData is a function in dailyData.js to get data using nasa apod api
     } else if(req.query.start_date && req.query.end_date) {  //url&start_date=2020-11-1&end_date=2020-11-4
-        dailyData(data => res.send(data),date = false,start_date = req.query.start_date,end_date = req.query.end_date);
+        dailyData(data => res.send(data), date = false, start_date = req.query.start_date, end_date = req.query.end_date);
     } else { //url default case
         dailyData(data => res.send(data));
     }

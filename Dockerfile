@@ -1,4 +1,4 @@
-FROM node
+FROM node:12-alpine
 
 WORKDIR /usr/src/app
 
@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . .
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "dokr" ]

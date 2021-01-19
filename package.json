@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "env-cmd -f ./config/dev.env nodemon server.js -e js,hbs",
-    "docker": "env-cmd -f ./config/dev.env node server.js"
+    "dokr": "env-cmd -f ./config/dev.env node server.js"
   },
   "keywords": [],
   "author": "",
